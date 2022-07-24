@@ -2,6 +2,7 @@
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .input {
@@ -9,10 +10,13 @@
   font-size: 1.25rem;
   border-style: none;
   padding: 0.25rem;
+  text-align: center;
 }
 
 .btn {
   border-style: none;
   width: 1.75rem;
   font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #27272a;
 }
