@@ -8,22 +8,18 @@ export function AddItem({ add }) {
     setForm(event.target.value);
   };
 
-  const handleAddArticle = () => {
+  const handleAddArticle = (event) => {
+    event.preventDefault();
     add(form);
     setForm("");
   };
 
   return (
-    <div className={styles.div}>
-      <input
-        placeholder="Nuevo articulo"
-        value={form}
-        onChange={handleChangeForm}
-        className={styles.input}
-      />
-      <button className={styles.btn} onClick={handleAddArticle}>
+    <form className={styles.div} onSubmit={handleAddArticle}>
+      <input placeholder="Nuevo articulo" value={form} onChange={handleChangeForm} className={styles.input} />
+      <button type="submit" className={styles.btn}>
         +
       </button>
-    </div>
+    </form>
   );
 }

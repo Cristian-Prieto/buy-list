@@ -1,6 +1,6 @@
 import { Footer } from "./components/Footer";
 import { List } from "./components/List";
-import styles from "./app.module.css";
+import styles from "./App.module.css";
 import { Header } from "./components/Header";
 
 function App() {
