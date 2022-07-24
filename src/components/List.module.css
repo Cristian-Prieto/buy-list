@@ -1,0 +1,17 @@
+.div {
+  background-color: #581c87;
+  margin: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.ul {
+  padding: 0;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.h2 {
+  text-align: center;
+  font-size: 2rem;
+}
