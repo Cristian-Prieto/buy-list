@@ -8,29 +8,13 @@ const INITIAL_LIST = [];
 export function List() {
   const [list, setList] = useState(INITIAL_LIST);
 
-  // const add = (itemName) => {
-  //   const itemAlreadyExist = list.find((art) => art.article === itemName);
-  //   if (!itemAlreadyExist && itemName) {
-  //     const newList = [...list];
-  //     newList.push({ article: itemName, total: 1 });
-  //     setList(newList);
-  //   }
-  // };
-
   const add = (itemName) => {
-    // validations
-
-    // is not empty
-    if (!itemName) return;
-
-    // item doesn't exist already (items can't be duplicated)
     const itemAlreadyExist = list.find((art) => art.article === itemName);
-    if (itemAlreadyExist) return;
-
-    // Adds a new item when all conditions are met
-    const newList = [...list];
-    newList.push({ article: itemName, total: 1 });
-    setList(newList);
+    if (!itemAlreadyExist && itemName) {
+      const newList = [...list];
+      newList.push({ article: itemName, total: 1 });
+      setList(newList);
+    }
   };
 
   const increaseAmount = (articleToModify) => {
