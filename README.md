@@ -1,8 +1,10 @@
-<p align="center">Cubix todo list</p>
+<p align="center">Cubix buy list</p>
 
 [Go to site](https://cubix-todolist.netlify.app/)
 
-My to-do tasks.
+![](https://img.shields.io/badge/REACT--DOM-18.2.0-blue)
+
+A to-buy list.
 
 ## Authors
 
